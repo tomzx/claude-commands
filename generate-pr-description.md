@@ -1,4 +1,6 @@
-Based on the changes in this repository compared to the point at which this branch was created, generate a PR description.
+Generate a PR description using the follow changes.
+
+!`git diff $(gt parent)..HEAD`
 
 The PR description should be in the following format:
 
@@ -11,6 +13,10 @@ Use the present tense.
 # Why
 
 A summary of the reason for the changes in this PR.
+
+# How to test
+
+A summary of how to test the changes in this PR.
 ```
 
 The returned response should be copy/pasteable into a PR description.
