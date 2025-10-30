@@ -8,11 +8,28 @@ Write the output to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.git
 Summarize what I discussed on slack on {TODAY}?
 Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.slack.md`.
 
+The slack summary should be in the following format (each section as a bullet point list):
+
+```
+# Summary
+
+A summary of the key conversations.
+
+# Key Conversations
+
+A list of the key conversations (including a link to the conversation).
+
+# Action Items Generated
+
+A list of the action items generated.
+```
+
+
 # Summarize overall activity
 Summarize my overall activity on {TODAY}?
 Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.overall.md`.
 
-The summary should be in the following format (each section as a bullet point list):
+The overall summary should be in the following format (each section as a bullet point list):
 
 ```
 # Accomplishments
