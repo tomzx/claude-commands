@@ -58,3 +58,16 @@ A summary of what I need to do next.
 ```
 
 Avoid repeating the same information said differently within the same section.
+
+# Timeline
+Using the information collected, create a timeline of the day.
+
+Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.timeline.md`.
+
+The timeline should be in the following format (each section as a bullet point list):
+
+```
+# Timeline
+
+* Timestamp - Activity
+```
