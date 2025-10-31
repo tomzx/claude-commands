@@ -1,14 +1,17 @@
+BASE_DIR=~/repos/git/shopify-personal-notes/issues
+
 Pull the information about the issue $1 using `gh`.
 
 Pull the codebase for the repository using `gh repo clone`.
+
+Pull the comments for the issue using `gh issue view --comments`.
+Write the comments to `{BASE_DIR}/{REPOSITORY}/{ISSUE_NUMBER}/comments.md`.
 
 Given the codebase, the issue description, and any discussion within the issue comments, determine if there is enough information to implement the issue.
 If there is not enough information, ask for more information by using `gh issue comment`.
 If there is enough information, create a plan to implement the issue.
 
-Write the plan to `~/repos/git/shopify-personal-notes/issues/{REPOSITORY}/{ISSUE_NUMBER}/prepare-issue.md`.
-
-Indicate the date+time the file was generated in the file header.
+Write the plan to `{BASE_DIR}/{REPOSITORY}/{ISSUE_NUMBER}/prepare-issue.md`.
 
 The plan should be in the following format (each section as a bullet point list):
 
