@@ -4,6 +4,7 @@ Use the following set of instructions to review the PR:
 
 * Verify that the build/tests pass
 * Read the issue title and description
+* Verify that the PR links to an issue for traceability purposes
 * New code
 	* Understand the feature and associated requirements that are supposed to be implemented
 	* Verify code implements the desired feature and that the requirements are completed
@@ -24,6 +25,14 @@ Use the following set of instructions to review the PR:
 	* In a weak typed or type hinted language, are parameters and return of functions/methods typed?
 	* Are there TODOs that should be completed within this review?
 	* Check code for code style issues
+	* Dependencies
+		* Are new dependencies justified?
+		* Are versions pinned appropriately?
+		* Are lock files updated?
+	* Is appropriate logging added?
+	* Are relevant metrics/traces/alerts for monitoring purposes added?
+	* Is the change size appropriate for what is implemented?
+	* Are any of the design decisions taken single way doors or reversible?
 * Bug fix
 	* Verify that the fix is applied at the right location and will not "fix the symptoms, not the cause"
 
