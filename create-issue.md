@@ -15,3 +15,5 @@ A clear list of criteria that must be met for the issue to be considered resolve
 
 An estimate of the time required to complete the work, after which the implementer should reassess if the issue should be completed or get help.
 ```
+
+Label the issue with `not-urgent` and `not-important` unless mentioned otherwise.
