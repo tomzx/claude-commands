@@ -24,7 +24,6 @@ A list of the key conversations (including a link to the conversation).
 A list of the action items generated.
 ```
 
-
 # Summarize overall activity
 Summarize my overall activity on {TODAY}?
 Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.overall.md`.
