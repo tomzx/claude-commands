@@ -157,6 +157,8 @@ When providing feedback:
 
 ## Output
 
+Put 🔴/🟢 at the top of the document to indicate the overall status of the review (ready to merge, needs work, etc.)
+
 When reviewing, write the response to `~/repos/git/shopify-personal-notes/issues/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
 
 Indicate the date+time the file was generated in the file header.
