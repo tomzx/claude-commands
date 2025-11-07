@@ -1,3 +1,5 @@
+Base_DIR=~/repos/git/shopify-personal-notes/issues
+
 # PR Review Process
 
 ## Setup
@@ -8,13 +10,15 @@ Pull the information about the PR $1 using `gh`.
 
 Before diving into the code, verify:
 
-* **Build & Tests**: Verify that the build/tests pass
-* **PR Metadata**
+* Build & Tests
+	* Verify that the build/tests pass
+* PR Metadata
 	* Read the PR title and description - is it clear and complete?
 	* Verify that the PR links to an issue for traceability purposes
+		* If missing, request the author to link an issue
 	* Is the change size appropriate for what is implemented?
-* **Understanding the Objective**
-	* Read the linked issue title and description
+* Understanding the Objective
+	* Read the linked issue title and description (use `gh` to pull issue details)
 	* Understand the feature and associated requirements that are supposed to be implemented
 	* For bug fixes: understand the root cause being addressed
 
@@ -22,89 +26,89 @@ Before diving into the code, verify:
 
 ### Code Quality & Design
 
-* **Naming Conventions**
+* Naming Conventions
 	* Verify classes, methods, functions, parameters naming
 		* Are they significant of their purpose?
 		* Are they clear enough?
 		* Are they respecting the naming convention?
-* **Design Principles**
+* Design Principles
 	* Does the code respect [SOLID](https://en.wikipedia.org/wiki/SOLID)?
 	* Is the code following existing design patterns in the codebase?
 	* Are there code duplications that violate DRY principle?
-* **Code Style**
+* Code Style
 	* Check code for code style issues
 	* Are magic numbers/strings extracted as constants or configuration?
 	* Is there dead code or commented-out code that should be removed?
-* **Type Safety**
+* Type Safety
 	* In a weak typed or type hinted language, are parameters and return of functions/methods typed?
 
 ### Testing & Coverage
 
-* **Test Existence**
+* Test Existence
 	* Check code contains tests
 	* Is all the new code covered by those tests?
-* **Test Quality**
+* Test Quality
 	* Do tests cover edge cases and error scenarios?
 	* Are test names descriptive of what they're testing?
 	* Are tests testing behavior rather than implementation details?
 
 ### Architecture & Structure
 
-* **File Organization**
+* File Organization
 	* Verify the location of new/moved files
 		* Are the files in the right directory?
 		* Are they appropriately named?
-* **Dependencies**
+* Dependencies
 	* Are new dependencies justified?
 	* Are versions pinned appropriately?
 	* Are lock files updated?
 	* License compatibility verified?
-* **Backward Compatibility**
+* Backward Compatibility
 	* Consider that when functions/methods signature change, code may now be backward incompatible
 		* Discuss whether this is necessary
 		* Backward incompatible changes should be documented
-* **Reversibility**
+* Reversibility
 	* Are any of the design decisions taken single way doors or reversible?
 
 ### Operational Concerns
 
-* **Logging**
+* Logging
 	* Is appropriate logging added?
 	* Are log levels appropriate?
 	* Is sensitive data being logged?
-* **Monitoring**
+* Monitoring
 	* Are relevant metrics/traces/alerts for monitoring purposes added?
-* **Error Handling**
+* Error Handling
 	* Are errors handled gracefully?
 	* Are error messages meaningful and actionable?
 	* Is there proper cleanup of resources (connections, memory, subscriptions)?
-* **Performance**
+* Performance
 	* Are there any obvious performance issues (N+1 queries, inefficient algorithms)?
 	* Is caching used appropriately?
 
 ### Security & Data
 
-* **Input Validation**
+* Input Validation
 	* Is input validated and sanitized?
 	* Are boundary conditions and null/undefined cases handled?
-* **Security Best Practices**
+* Security Best Practices
 	* Authentication/authorization checks in place?
 	* No hardcoded secrets or credentials?
 	* Parameterized queries to prevent SQL injection?
 	* XSS/CSRF protections where applicable?
-* **Data Handling**
+* Data Handling
 	* Is PII handled appropriately?
 	* Are data migrations safe and reversible?
 
 ### Documentation & Maintenance
 
-* **Code Documentation**
+* Code Documentation
 	* Are complex algorithms or business logic commented?
 	* Are public APIs documented?
-* **Project Documentation**
+* Project Documentation
 	* Does README or user-facing documentation need updates?
 	* Are breaking changes documented in CHANGELOG?
-* **Technical Debt**
+* Technical Debt
 	* Are there TODOs that should be completed within this review?
 	* Is new technical debt being introduced? Is it necessary?
 
@@ -140,15 +144,15 @@ Before diving into the code, verify:
 
 When providing feedback:
 
-* **Be Specific and Actionable**
+* Be Specific and Actionable
 	* Provide specific suggestions, not just problems
 	* Include code examples when helpful
-* **Prioritize Feedback**
+* Prioritize Feedback
 	* Clearly mark nitpicks and optional comments
 	* Use an approach such as [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119) where you indicate whether a change is a MUST, SHOULD, or MAY
 	* Traffic light color emojis: 🔴 MUST, 🟡 SHOULD, 🟢 MAY
 	* Another emoji based option is [gitmoji](https://gitmoji.dev/)
-* **Maintain Positive Tone**
+* Maintain Positive Tone
 	* Assume competence
 	* Provide rationale or context for suggestions
 	* Consider how comments may be interpreted
@@ -159,6 +163,6 @@ When providing feedback:
 
 Put 🔴/🟢 at the top of the document to indicate the overall status of the review (ready to merge, needs work, etc.)
 
-When reviewing, write the response to `~/repos/git/shopify-personal-notes/issues/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
+When reviewing, write the response to `{BASE_DIR}/issues/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
 
-Indicate the date+time the file was generated in the file header.
+Indicate the date+time (using ISO 8601 format) the file was generated in the file header.

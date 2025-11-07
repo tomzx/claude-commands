@@ -1,12 +1,13 @@
+BASE_DIR=~/repos/git/shopify-personal-notes/issues
 TODAY=`date +%Y-%m-%d`
 
 # Summarize GitHub Activity
 Call `~/repos/git/personal-automation/others/summarize-github-activity tomzx {TODAY} {TODAY} Shopify,shop`.
-Write the output to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.github.md`.
+Write the output to `{BASE_DIR}/{YEAR}/{MONTH}/{DAY}.github.md`.
 
 # Summarize Slack Activity
 Summarize what I discussed on slack on {TODAY}?
-Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.slack.md`.
+Write the response to `{BASE_DIR}/{YEAR}/{MONTH}/{DAY}.slack.md`.
 
 The slack summary should be in the following format (each section as a bullet point list):
 
@@ -26,7 +27,7 @@ A list of the action items generated.
 
 # Summarize overall activity
 Summarize my overall activity on {TODAY}?
-Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.overall.md`.
+Write the response to `{BASE_DIR}/{YEAR}/{MONTH}/{DAY}.overall.md`.
 
 The overall summary should be in the following format (each section as a bullet point list):
 
@@ -61,7 +62,7 @@ Avoid repeating the same information said differently within the same section.
 # Timeline
 Using the information collected, create a timeline of the day.
 
-Write the response to `~/repos/git/shopify-personal-notes/{YEAR}/{MONTH}/{DAY}.timeline.md`.
+Write the response to `{BASE_DIR}/{YEAR}/{MONTH}/{DAY}.timeline.md`.
 
 The timeline should be in the following format (each section as a bullet point list):
 
