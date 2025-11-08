@@ -1,4 +1,4 @@
-BASE_DIR=~/repos/git/shopify-personal-notes
+BASE_DIR=$HOME/repos/git/shopify-personal-notes
 TODAY=`date +%Y-%m-%d`
 
 # Summarize Slack Activity
@@ -45,8 +45,13 @@ A summary of the action items generated from the conversations.
 ```
 
 # Summarize Colleagues Slack Channel Activity
-Summarize the activity of the following slack users during the week ending {TODAY}: !`scripts/get-env COLLEAGUES`. (use slack MCP server to get the messages)
-Write the response to `{BASE_DIR}/{YEAR}/weekly/{WEEK}.slack.colleagues.md`.
+For each person in the following list !`scripts/get-env COLLEAGUES`, summarize their slack activity during the week ending {TODAY}.
+Get the replies from all the thread in which they were discussing to gather additional context.
+Use slack MCP server to get the messages.
+Do this one person at a time.
+Write each person's summary to `{BASE_DIR}/{YEAR}/weekly/{WEEK}/slack/{COLLEAGUE}.md`.
+
+Summarize the overall activity of the colleagues during the week ending {TODAY} in the file `{BASE_DIR}/{YEAR}/weekly/{WEEK}.slack.colleagues.md`.
 
 # Summarize Action Items
 Summarize the action items I need to follow up on based on the notes taken during the week ending {TODAY} in the directory `{BASE_DIR}`.

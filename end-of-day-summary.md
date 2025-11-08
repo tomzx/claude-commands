@@ -1,8 +1,8 @@
-BASE_DIR=~/repos/git/shopify-personal-notes
+BASE_DIR=$HOME/repos/git/shopify-personal-notes
 TODAY=`date +%Y-%m-%d`
 
 # Summarize GitHub Activity
-Call `~/repos/git/personal-automation/others/summarize-github-activity tomzx {TODAY} {TODAY} Shopify,shop`.
+Call `$HOME/repos/git/personal-automation/others/summarize-github-activity tomzx {TODAY} {TODAY} Shopify,shop`.
 Write the output to `{BASE_DIR}/{YEAR}/{MONTH}/{DAY}.github.md`.
 
 # Summarize Slack Activity

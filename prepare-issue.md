@@ -1,4 +1,4 @@
-BASE_DIR=~/repos/git/shopify-personal-notes/issues
+BASE_DIR=$HOME/repos/git/shopify-personal-notes/issues
 
 Pull the information and comments about the issue $1 using `gh issue view --comments`.
 Write the raw output of the command to `{BASE_DIR}/{REPOSITORY}/{ISSUE_NUMBER}/issue.md`.
