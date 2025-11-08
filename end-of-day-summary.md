@@ -1,4 +1,4 @@
-BASE_DIR=~/repos/git/shopify-personal-notes/issues
+BASE_DIR=~/repos/git/shopify-personal-notes
 TODAY=`date +%Y-%m-%d`
 
 # Summarize GitHub Activity
