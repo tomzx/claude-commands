@@ -1,4 +1,4 @@
-BASE_DIR=$HOME/repos/git/shopify-personal-notes
+BASE_DIR=!`scripts/get-env NOTES_DIR`
 TODAY=`date +%Y-%m-%d`
 
 # Summarize Slack Activity

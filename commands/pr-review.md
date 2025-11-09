@@ -1,4 +1,4 @@
-Base_DIR=$HOME/repos/git/shopify-personal-notes/issues
+BASE_DIR=!`scripts/get-env ISSUES_DIR`
 
 ## Setup
 
@@ -161,6 +161,6 @@ When providing feedback:
 
 Put 🔴/🟢 at the top of the document to indicate the overall status of the review (ready to merge, needs work, etc.)
 
-When reviewing, write the response to `{BASE_DIR}/issues/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
+When reviewing, write the response to `{ISSUES_DIR}/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
 
 Indicate the date+time (using ISO 8601 format) the file was generated in the file header.
