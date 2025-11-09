@@ -1,10 +1,5 @@
 Base_DIR=$HOME/repos/git/shopify-personal-notes/issues
 
-# PR Review Process
-
-* 10k view: is it solving a problem
-* Is it good code?
-
 ## Setup
 
 Pull the information about the PR $1 using `gh`.
