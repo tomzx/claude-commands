@@ -1,0 +1,11 @@
+config/notification_states.json
+debug
+ide
+projects
+shell-snapshots
+statsig
+todos
+
+.credentials.json
+history.jsonl
+settings.json
