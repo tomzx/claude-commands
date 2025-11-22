@@ -71,3 +71,25 @@ The timeline should be in the following format (each section as a bullet point l
 
 * Timestamp - Activity
 ```
+
+# Standup
+Generate information to share in the next day's standup.
+Write the response to `{BASE_DIR}/{YEAR}/{MONTH}/{NEXT_WORKDAY}.standup.md`.
+
+The standup should be in the following format (each section as a bullet point list):
+
+```
+# What I did yesterday
+
+A summary of what I did yesterday.
+
+# What I will do today
+
+A summary of what I will do today.
+
+# Blockers/Waiting for
+
+A summary of what I am blocked by or waiting for.
+```
+
+Each section should be at most 5 bullet points.
