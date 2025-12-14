@@ -2,7 +2,7 @@ BASE_DIR=!`scripts/get-env ISSUES_DIR`
 
 ## Setup
 
-Pull the information about the PR $1 using `gh`.
+Pull the information about the PR $1 using `gh pr view issue-number --repo owner/repository --comments` and write the raw output to `{BASE_DIR}/{REPOSITORY}/{ISSUE_NUMBER}/gh-pr-view.md`.
 
 ## Pre-Review Checklist
 
@@ -161,6 +161,7 @@ When providing feedback:
 
 Put 🔴/🟢 at the top of the document to indicate the overall status of the review (ready to merge, needs work, etc.)
 
-When reviewing, write the response to `{ISSUES_DIR}/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
-
 Indicate the date+time (using ISO 8601 format) the file was generated in the file header.
+
+When reviewing, write the response to `{ISSUES_DIR}/{REPOSITORY}/{PR_NUMBER}/pr-review.md`.
+If a file already exists, update the file with the new information and tell me what changes have been made since the last review.
